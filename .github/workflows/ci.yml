@@ -1,0 +1,31 @@
+name: Python CI
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            # setting up Python
+            - name: Set up Python
+              uses: actions/setup-python@v2
+              with:
+                  python-version: '3.13'
+
+            # installing dependencies
+            - name: Install dependencies
+              run: pip install -r requirements.txt
+
+            # checking Python version
+            - name: check Python version
+              run: python --version
+              
