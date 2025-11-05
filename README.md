@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-echo # solar-challenge-week1
-=======
 # MoonLight Solar Analysis
 
 This project performs exploratory and statistical analysis for MoonLight Energy Solutions to identify high-potential regions for solar investments.
@@ -25,4 +22,3 @@ conda activate moonlight
 ```bash
 pip install -r requirements.txt
 ```
->>>>>>> Stashed changes
