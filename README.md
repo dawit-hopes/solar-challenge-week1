@@ -9,13 +9,16 @@ This project performs exploratory and statistical analysis for MoonLight Energy 
 
 ```bash
 conda create -n moonlight python=3.13
+```
 
 
 2. **Activate the environment***
 
 ```bash
 conda activate moonlight
+```
 
 3. **install dependencies**
 ```bash
 pip install -r requirements.txt
+```
