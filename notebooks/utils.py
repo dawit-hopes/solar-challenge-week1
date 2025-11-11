@@ -146,7 +146,7 @@ def draw_histogram(df: pd.DataFrame, feature: str, title: str):
     plt.show()
 
 
-def draw_scatterplot(df: pd.DataFrame, x: str, y: str, title: str):
+def draw_scatterplot(df: pd.DataFrame, x: str, y: str):
     """
     Draw a scatter plot for the specified x and y features in the DataFrame.
 
@@ -157,7 +157,7 @@ def draw_scatterplot(df: pd.DataFrame, x: str, y: str, title: str):
     title (str): The title of the plot.
     """
     sns.scatterplot(x=x, y=y, data=df)
-    plt.title(title)
+    plt.title(f"Scatter plot: {x} vs {y}")
     plt.show()
 
 
